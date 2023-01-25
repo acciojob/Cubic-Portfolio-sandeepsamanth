@@ -1,2 +1,47 @@
 
-/* Your CSS Code here. */
+/* Your CSS Code here. */#cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 800px;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.front {
+  background: blue;
+  transform: rotateY(0deg);
+}
+
+.back {
+  background: green;
+  transform: rotateY(180deg);
+}
+
+.top {
+  background: yellow;
+  transform: rotateX(90deg) rotateY(0deg);
+}
+
+.bottom {
+  background: purple;
+  transform: rotateX(-90deg) rotateY(0deg);
+}
+
+.left {
+  background: orange;
+  transform: rotateY(-90deg);
+}
+
+.right {
+  background: red;
+  transform: rotateY(90deg);
+}
